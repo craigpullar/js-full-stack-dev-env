@@ -14,7 +14,7 @@ var config = [{
     }
   }),
   ],
-  context: __dirname + '/client/js', 
+  context: __dirname + '/client/js',
   entry: {
     app: './app.js',
   },

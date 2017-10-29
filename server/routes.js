@@ -17,6 +17,12 @@ routes.addRoute('GET','/', (request,reply) => {
 routes.addRoute('GET','/dist/{filename}.js', (request,reply) => {
 	reply.file(`./client/dist/${request.params.filename}.js`);
 });
+routes.addRoute('GET','/images/{filename}', (request,reply) => {
+	reply.file(`./client/images/${request.params.filename}`);
+});
+routes.addRoute('GET','/fonts/{filename}', (request,reply) => {
+	reply.file(`./client/fonts/${request.params.filename}`);
+});
 
 
 module.exports = routes.getRoutes();
